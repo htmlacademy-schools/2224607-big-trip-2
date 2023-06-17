@@ -32,9 +32,9 @@ const createWayPointTemplate = (point, destinations, allOffers) => {
       <h3 class="event__title">${type} ${destinationData ? he.encode(destinationData.name) : ''}</h3>
       <div class="event__schedule">
         <p class="event__time">
-        <time class="event__start-time" datetime="${dateFrom}">${(startDate === endDate) ? getTime(dateFrom) : startDate}</time>
+        <time class="event__start-time" datetime="${dateFrom}">${getTime(dateFrom)}</time>
         &mdash;
-        <time class="event__end-time" datetime="${dateTo}">${(startDate === endDate) ? getTime(dateTo) : endDate}</time>
+        <time class="event__end-time" datetime="${dateTo}">${getTime(dateTo)}</time>
         </p>
         <p class="event__duration">${pointDuration}</p>
       </div>
